@@ -46,7 +46,6 @@ function searchCondition() {
       });
   }
   function clearResult() {
-    console.log("clear functionality called");
     document.getElementById('travelInput').value = '';
     resultDiv.innerHTML = "";
   }
