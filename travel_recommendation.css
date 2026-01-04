@@ -50,10 +50,36 @@ body {
     font-weight: bold;
 }
 .home {
+    position: relative;
+    height: calc(100vh - 80px); /* full screen minus navbar */
+  }
+  #result {
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    width: 40%;
+    height: 100%;
+  
+    overflow-y: auto;
+    padding: 20px;
+  
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    flex-direction: column;
+    gap: 20px;
+  }
+  #result > div {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  #result img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }  
 #team {
     margin-top: 50px;
     display: flex;
